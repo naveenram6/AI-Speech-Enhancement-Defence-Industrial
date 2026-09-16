@@ -67,21 +67,18 @@ Clean speech signals are combined with environmental noise at different noise le
                      │
                      │
                      ▼
-              ┌─────────────┐
-              │ Noise Mixing │
-              └─────────────┘
+                Noise Mixing 
                      ▲
                      │
-              Defence Noise
+               Defence Noise
                      │
                      ▼
                Noisy Speech
                      │
                      ▼
-        ┌────────────────────────┐
-        │ AI-Based Speech         │
-        │ Enhancement System      │
-        └────────────────────────┘
+              AI-Based Speech       
+             Enhancement System      
+        
                      │
                      ▼
               Enhanced Speech
