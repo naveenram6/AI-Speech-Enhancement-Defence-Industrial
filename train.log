@@ -1,0 +1,95 @@
+2026-09-03 13:12:39,595:INFO: Applied quirks (see `speechbrain.utils.quirks`): [disable_jit_profiling, allow_tf32]
+2026-09-03 13:12:39,595:INFO: Excluded quirks specified by the `SB_DISABLE_QUIRKS` environment (comma-separated list): []
+2026-09-03 13:12:39,620:INFO: Imported the model from 'src.training.dcc_tf'.
+2026-09-03 13:12:40,805:INFO: Loaded train dataset at defence_dataset containing 10000 elements
+2026-09-03 13:12:41,935:INFO: Loaded test dataset at defence_dataset containing 500 elements
+2026-09-03 13:12:42,063:INFO: Using CUDA devices: [0]
+2026-09-03 13:12:42,140:INFO: Initializing optimizer with {'lr': 0.0005, 'weight_decay': 0.0}
+2026-09-03 13:12:42,143:INFO: Learning rates initialized to: {group 0: params=1.04749M lr=5.0E-04}
+2026-09-03 13:12:42,166:INFO: Initialized LR scheduler with params: fix_lr_epochs=0 {'mode': 'max', 'factor': 0.1, 'patience': 5, 'min_lr': 5e-06, 'threshold': 0.1, 'threshold_mode': 'abs'}
+2026-09-03 13:12:42,166:INFO: Epoch 0:
+2026-09-03 13:13:01,214:INFO: Train: signal_noise_ratio=-3.9660 scale_invariant_signal_noise_ratio=-13.5240 loss=2.7272
+2026-09-03 13:13:16,785:INFO: Test: signal_noise_ratio=-0.8162 scale_invariant_signal_noise_ratio=-5.2922 loss=-1.0462 runtime=0.0000
+2026-09-03 13:14:35,182:INFO: Applied quirks (see `speechbrain.utils.quirks`): [disable_jit_profiling, allow_tf32]
+2026-09-03 13:14:35,182:INFO: Excluded quirks specified by the `SB_DISABLE_QUIRKS` environment (comma-separated list): []
+2026-09-03 13:14:35,198:INFO: Imported the model from 'src.training.dcc_tf'.
+2026-09-03 13:14:36,279:INFO: Loaded train dataset at defence_dataset containing 10000 elements
+2026-09-03 13:14:37,361:INFO: Loaded test dataset at defence_dataset containing 500 elements
+2026-09-03 13:14:37,485:INFO: Using CUDA devices: [0]
+2026-09-03 13:14:37,551:INFO: Initializing optimizer with {'lr': 0.0005, 'weight_decay': 0.0}
+2026-09-03 13:14:37,551:INFO: Learning rates initialized to: {group 0: params=1.04749M lr=5.0E-04}
+2026-09-03 13:14:37,551:INFO: Initialized LR scheduler with params: fix_lr_epochs=0 {'mode': 'max', 'factor': 0.1, 'patience': 5, 'min_lr': 5e-06, 'threshold': 0.1, 'threshold_mode': 'abs'}
+2026-09-03 13:14:37,551:INFO: Epoch 0:
+2026-09-03 13:14:55,803:INFO: Train: signal_noise_ratio=-3.9660 scale_invariant_signal_noise_ratio=-13.5241 loss=2.7272
+2026-09-03 13:15:11,319:INFO: Test: signal_noise_ratio=-0.8163 scale_invariant_signal_noise_ratio=-5.2929 loss=-1.0460 runtime=0.0000
+2026-09-03 13:15:11,319:INFO: LR after scheduling step: [0.0005]
+2026-09-03 13:15:11,351:INFO: Found best validation scale_invariant_signal_noise_ratio!
+2026-09-03 13:15:11,447:INFO: Saved checkpoint at experiments\gpu_final\0.pt
+2026-09-03 13:15:12,099:INFO: Epoch 1:
+2026-09-03 13:15:29,437:INFO: Train: signal_noise_ratio=-1.3839 scale_invariant_signal_noise_ratio=-5.6287 loss=-1.3187
+2026-09-03 13:15:45,010:INFO: Test: signal_noise_ratio=-0.9315 scale_invariant_signal_noise_ratio=-3.7158 loss=-2.2589 runtime=0.0000
+2026-09-03 13:15:45,010:INFO: LR after scheduling step: [0.0005]
+2026-09-03 13:15:45,010:INFO: Found best validation scale_invariant_signal_noise_ratio!
+2026-09-03 13:15:45,105:INFO: Saved checkpoint at experiments\gpu_final\1.pt
+2026-09-03 13:15:45,502:INFO: Epoch 2:
+2026-09-03 13:16:02,326:INFO: Train: signal_noise_ratio=-0.5031 scale_invariant_signal_noise_ratio=-3.6831 loss=-2.2977
+2026-09-03 13:16:18,862:INFO: Test: signal_noise_ratio=0.3477 scale_invariant_signal_noise_ratio=-1.5148 loss=-3.2169 runtime=0.0000
+2026-09-03 13:16:18,862:INFO: LR after scheduling step: [0.0005]
+2026-09-03 13:16:18,878:INFO: Found best validation scale_invariant_signal_noise_ratio!
+2026-09-03 13:16:18,957:INFO: Saved checkpoint at experiments\gpu_final\2.pt
+2026-09-03 13:16:19,434:INFO: Epoch 3:
+2026-09-03 13:16:38,042:INFO: Train: signal_noise_ratio=-0.1165 scale_invariant_signal_noise_ratio=-2.2374 loss=-2.8615
+2026-09-03 13:16:54,434:INFO: Test: signal_noise_ratio=0.5620 scale_invariant_signal_noise_ratio=-1.0897 loss=-3.2401 runtime=0.0000
+2026-09-03 13:16:54,434:INFO: LR after scheduling step: [0.0005]
+2026-09-03 13:16:54,446:INFO: Found best validation scale_invariant_signal_noise_ratio!
+2026-09-03 13:16:54,561:INFO: Saved checkpoint at experiments\gpu_final\3.pt
+2026-09-03 13:16:55,006:INFO: Epoch 4:
+2026-09-03 13:17:13,780:INFO: Train: signal_noise_ratio=0.2757 scale_invariant_signal_noise_ratio=-1.5764 loss=-3.4430
+2026-09-03 13:17:32,495:INFO: Test: signal_noise_ratio=0.9481 scale_invariant_signal_noise_ratio=-0.3636 loss=-3.3434 runtime=0.0000
+2026-09-03 13:17:32,498:INFO: LR after scheduling step: [0.0005]
+2026-09-03 13:17:32,498:INFO: Found best validation scale_invariant_signal_noise_ratio!
+2026-09-03 13:17:32,595:INFO: Saved checkpoint at experiments\gpu_final\4.pt
+2026-09-03 13:17:33,202:INFO: Epoch 5:
+2026-09-03 13:17:52,675:INFO: Train: signal_noise_ratio=0.3073 scale_invariant_signal_noise_ratio=-1.3362 loss=-3.4991
+2026-09-03 13:18:09,941:INFO: Test: signal_noise_ratio=0.7934 scale_invariant_signal_noise_ratio=-0.3313 loss=-3.6292 runtime=0.0000
+2026-09-03 13:18:09,941:INFO: LR after scheduling step: [0.0005]
+2026-09-03 13:18:09,950:INFO: Found best validation scale_invariant_signal_noise_ratio!
+2026-09-03 13:18:10,030:INFO: Saved checkpoint at experiments\gpu_final\5.pt
+2026-09-03 13:18:10,538:INFO: Epoch 6:
+2026-09-03 13:18:30,191:INFO: Train: signal_noise_ratio=0.6944 scale_invariant_signal_noise_ratio=-0.6721 loss=-4.3173
+2026-09-03 13:18:48,565:INFO: Test: signal_noise_ratio=0.9575 scale_invariant_signal_noise_ratio=-0.1661 loss=-3.6163 runtime=0.0000
+2026-09-03 13:18:48,565:INFO: LR after scheduling step: [0.0005]
+2026-09-03 13:18:48,568:INFO: Found best validation scale_invariant_signal_noise_ratio!
+2026-09-03 13:18:48,663:INFO: Saved checkpoint at experiments\gpu_final\6.pt
+2026-09-03 13:18:49,198:INFO: Epoch 7:
+2026-09-03 13:19:07,257:INFO: Train: signal_noise_ratio=0.5752 scale_invariant_signal_noise_ratio=-0.7491 loss=-3.8518
+2026-09-03 13:19:23,394:INFO: Test: signal_noise_ratio=0.9438 scale_invariant_signal_noise_ratio=-0.3710 loss=-3.9089 runtime=0.0000
+2026-09-03 13:19:23,395:INFO: LR after scheduling step: [0.0005]
+2026-09-03 13:19:23,503:INFO: Saved checkpoint at experiments\gpu_final\7.pt
+2026-09-03 13:19:24,022:INFO: Epoch 8:
+2026-09-03 13:19:42,628:INFO: Train: signal_noise_ratio=0.7036 scale_invariant_signal_noise_ratio=-0.4091 loss=-3.8996
+2026-09-03 13:19:59,014:INFO: Test: signal_noise_ratio=0.4903 scale_invariant_signal_noise_ratio=-0.8057 loss=-4.5071 runtime=0.0000
+2026-09-03 13:19:59,014:INFO: LR after scheduling step: [0.0005]
+2026-09-03 13:19:59,103:INFO: Saved checkpoint at experiments\gpu_final\8.pt
+2026-09-03 13:19:59,538:INFO: Epoch 9:
+2026-09-03 13:20:16,732:INFO: Train: signal_noise_ratio=0.4227 scale_invariant_signal_noise_ratio=-0.9281 loss=-4.1266
+2026-09-03 13:20:32,332:INFO: Test: signal_noise_ratio=1.0252 scale_invariant_signal_noise_ratio=-0.1855 loss=-3.6859 runtime=0.0000
+2026-09-03 13:20:32,332:INFO: LR after scheduling step: [0.0005]
+2026-09-03 13:20:32,395:INFO: Saved checkpoint at experiments\gpu_final\9.pt
+2026-09-03 13:20:33,015:INFO: Epoch 10:
+2026-09-03 13:20:50,169:INFO: Train: signal_noise_ratio=1.0851 scale_invariant_signal_noise_ratio=0.2223 loss=-4.5532
+2026-09-03 13:21:05,864:INFO: Test: signal_noise_ratio=0.9562 scale_invariant_signal_noise_ratio=-0.0365 loss=-4.2747 runtime=0.0000
+2026-09-03 13:21:05,864:INFO: LR after scheduling step: [0.0005]
+2026-09-03 13:21:05,892:INFO: Found best validation scale_invariant_signal_noise_ratio!
+2026-09-03 13:21:06,014:INFO: Saved checkpoint at experiments\gpu_final\10.pt
+2026-09-03 13:21:06,475:INFO: Epoch 11:
+2026-09-03 13:21:25,992:INFO: Train: signal_noise_ratio=1.0963 scale_invariant_signal_noise_ratio=0.1787 loss=-4.1351
+2026-09-03 13:21:44,153:INFO: Test: signal_noise_ratio=0.8037 scale_invariant_signal_noise_ratio=-0.4036 loss=-3.4454 runtime=0.0000
+2026-09-03 13:21:44,154:INFO: LR after scheduling step: [0.0005]
+2026-09-03 13:21:44,245:INFO: Saved checkpoint at experiments\gpu_final\11.pt
+2026-09-03 13:21:44,745:INFO: Epoch 12:
+2026-09-03 13:22:04,575:INFO: Train: signal_noise_ratio=1.2111 scale_invariant_signal_noise_ratio=0.1258 loss=-4.3780
+2026-09-03 13:22:23,027:INFO: Test: signal_noise_ratio=0.9087 scale_invariant_signal_noise_ratio=-0.1840 loss=-4.0160 runtime=0.0000
+2026-09-03 13:22:23,027:INFO: LR after scheduling step: [0.0005]
+2026-09-03 13:22:23,124:INFO: Saved checkpoint at experiments\gpu_final\12.pt
+2026-09-03 13:22:23,558:INFO: Epoch 13:

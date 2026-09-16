@@ -1,0 +1,56 @@
+{
+    "model": "src.training.dcc_tf",
+    "model_params": {
+        "label_len": 41,
+        "L": 32,
+        "enc_dim": 256,
+        "num_enc_layers": 10,
+        "dec_dim": 128,
+        "num_dec_layers": 1,
+        "dec_buf_len": 13,
+        "dec_chunk_size": 13,
+        "out_buf_len": 4
+    },
+
+    "train_data": {
+        "input_dir": "defence_dataset",
+        "dset": "train",
+        "sr": 44100,
+	"resample_rate": null
+    },
+
+    "val_data": {
+        "input_dir": "defence_dataset",
+        "dset": "val",
+        "sr": 44100,
+	"resample_rate": null
+    },
+
+    "test_data": {
+        "input_dir": "defence_dataset",
+        "dset": "test",
+        "sr": 44100,
+	"resample_rate": null
+    },
+
+    "optim": {
+        "lr": 0.0005,
+        "weight_decay": 0.0
+    },
+
+    "lr_sched": {
+        "mode": "max",
+        "factor": 0.1,
+        "patience": 5,
+        "min_lr": 0.000005,
+        "threshold": 0.1,
+        "threshold_mode": "abs"
+    },
+
+    "base_metric": "scale_invariant_signal_noise_ratio",
+
+    "epochs": 25,
+    "batch_size": 4,
+    "eval_batch_size": 4,
+    "n_workers": 2
+}
